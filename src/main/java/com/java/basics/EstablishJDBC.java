@@ -12,8 +12,7 @@ public class EstablishJDBC
 		{
 			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/employeepayroll","root","root");
 			Statement statement = connection.createStatement();
-			statement.execute("create table payrolltable(Id int,Name varchar(500),Email varchar(500),primary key(Id));");
-			statement.execute("insert into payrolltable values(1,'Ram','ram@gmail.com');");
+			statement.execute("insert into payrolltable values(2,'Terisa','terisa@gmail.com');");
 			statement.execute("select * from payrolltable;");
 		}
 		catch (SQLException e)
